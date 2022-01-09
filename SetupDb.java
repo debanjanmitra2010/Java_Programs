@@ -29,11 +29,11 @@ public class public class SetupDb {
             insertContact(statement,"Andrew", 9677497250, "dog@email.com");
 
             statement.execute("UPDATE " + TABLE_CONTACTS + " SET " +
-                    COLUMN_PHONE + "=5566789" +
-                    " WHERE " + COLUMN_NAME + "='Jane'");
+                    COLUMN_PHONE + "=9277497250" +
+                    " WHERE " + COLUMN_NAME + "='John'");
 
             statement.execute("DELETE FROM " +TABLE_CONTACTS +
-                    " WHERE " + COLUMN_NAME + "='Joe'");
+                    " WHERE " + COLUMN_NAME + "='Ashish'");
 
             ResultSet results = statement.executeQuery("SELECT * FROM " + TABLE_CONTACTS);
             while(results.next()) {
